@@ -26,7 +26,26 @@ h1 {
 
 main {
     background-image: linear-gradient(to bottom right, #476072, #EEEEEE);
-    padding-top: 20px;
+    padding-top: 6px;
+}
+
+.background {
+    height: 600px;
+    background-image: url(https://images.prismic.io/indiecampers-demo/f8302bef-06d7-4063-8d8f-be4359674750_final+leipzig.jpg?auto=compress,format&rect=0,0,1996,1331&w=2000&h=1334);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.background1 {
+    height: 400px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Old_city_hall_of_Leipzig_%2820%29.jpg/1280px-Old_city_hall_of_Leipzig_%2820%29.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 25px;
 }
 
 .continer {
@@ -41,8 +60,17 @@ main {
     box-shadow: 3px 3px 10px;
 }
 
+.card2 {
+    height: 200px;
+    margin: 0 20px 20px 20px;
+    background-color: #548CA8;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px;
+}
+
 .card1 {
-    margin-top: 50px;
+    display: block;
+    margin-top: 80px;
 }
 
 .nav {
@@ -50,7 +78,8 @@ main {
 }
 
 @media (min-width:481px) {
-    .card {
+    .card,
+    .card2 {
         display: inline-block;
         width: calc(45% - 30px);
     }
@@ -66,7 +95,8 @@ main {
     .fa-bars {
         display: none;
     }
-    .card {
+    .card,
+    .card2 {
         width: calc(30% - 30px);
     }
     .continer {
@@ -81,7 +111,8 @@ main {
     ul {
         width: 100%;
         list-style: none;
-        display: block;
+        display: flex;
+        justify-content: space-between;
         margin-top: 50px;
         text-align: center;
         background-color: #548CA8;
@@ -94,10 +125,10 @@ main {
         color: #EEEEEE;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: bold;
-        padding: 15px;
+        padding: 10px 5px;
         border-radius: 5px;
     }
     ul li:hover {
-        background-color: #334257;
+        background-color: #757b85;
     }
 }
