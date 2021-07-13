@@ -1,35 +1,50 @@
-                    header {
-                        background-color: #334257;
-                        padding: 10px;
-                        letter-spacing: 5px;
-                        color: #EEEEEE;
-                    }
-                    
-                    h1 {
-                        display: inline;
-                    }
-                    
-                    .fa-bars {
-                        position: absolute;
-                        font-size: xx-large;
-                        right: 10px;
-                        padding: 3px;
-                        color: #EEEEEE;
-                    }
-                    
-                    main {
-                        background-image: linear-gradient(to bottom right, #476072, #EEEEEE);
-                        padding-top: 20px;
-                    }
-                    
-                    .continer {}
-                    
-                    .card {
-                        width: calc(100% - 45px);
-                        height: 200px;
-                        margin: 0 20px 20px 20px;
-                        background-color: #548CA8;
-                        border-radius: 5px;
-                        box-shadow: 3px 3px 10px;
-                        padding-top: px
-                    }
+header {
+    background-color: #334257;
+    padding: 10px;
+    letter-spacing: 5px;
+    color: #EEEEEE;
+}
+
+h1 {
+    display: inline;
+}
+
+.fa-bars {
+    position: absolute;
+    font-size: xx-large;
+    right: 10px;
+    padding: 3px;
+    color: #EEEEEE;
+}
+
+main {
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #476072, #EEEEEE);
+    padding-top: 20px;
+}
+
+.continer {}
+
+.card {
+    height: 200px;
+    margin: 0 20px 20px 20px;
+    background-color: #548CA8;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px;
+}
+
+@media (min-width:481px) {
+    .card {
+        display: inline-block;
+        width: calc(45% - 30px);
+    }
+    .continer {
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) {
+    .card {
+        width: calc(30% - 30px);
+    }
+}
