@@ -23,7 +23,9 @@ main {
     padding-top: 20px;
 }
 
-.continer {}
+.continer {
+    width: 420px;
+}
 
 .card {
     height: 200px;
@@ -47,4 +49,9 @@ main {
     .card {
         width: calc(30% - 30px);
     }
+    .continer {
+        width: 720px;
+    }
 }
+
+@media (min-width:1025px) {}
