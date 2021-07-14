@@ -40,7 +40,7 @@ main {
 }
 
 .background1 {
-    height: 500px;
+    height: 400px;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Old_city_hall_of_Leipzig_%2820%29.jpg/1280px-Old_city_hall_of_Leipzig_%2820%29.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -110,6 +110,10 @@ main {
 .card h3 {
     color: #EEEEEE;
 }
+footer {
+    padding: 20px 0 0 0;
+    border-top: 1px solid #334257;
+}
 .footer footer .icons {
     display: flex;
     justify-content: space-evenly;
@@ -147,6 +151,11 @@ main {
     .card,
     .card2 {
         width: calc(30% - 40px);
+        transition-duration: 0.3s;
+    }
+    
+    .card:hover {
+        transform: scale(1.06);
     }
     
     .continer {
