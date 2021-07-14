@@ -10,6 +10,7 @@ header {
     position: fixed;
     width: 100%;
     display: inline;
+    z-index: 1;
 }
 
 h1 {
@@ -39,7 +40,7 @@ main {
 }
 
 .background1 {
-    height: 400px;
+    height: 500px;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Old_city_hall_of_Leipzig_%2820%29.jpg/1280px-Old_city_hall_of_Leipzig_%2820%29.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -53,61 +54,112 @@ main {
 }
 
 .card {
+    height: 230px;
+    margin: 0px 20px 20px 35px;
+    background-color: #548CA8;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/* .card2 {
     height: 200px;
     margin: 0 20px 20px 20px;
     background-color: #548CA8;
     border-radius: 5px;
-    box-shadow: 3px 3px 10px;
-}
+    box-shadow: 3px 3px 10px; */
 
-.card2 {
-    height: 200px;
-    margin: 0 20px 20px 20px;
-    background-color: #548CA8;
-    border-radius: 5px;
-    box-shadow: 3px 3px 10px;
-}
 
+}
 .card1 {
     display: block;
     margin-top: 80px;
 }
-
 .nav {
     display: none;
 }
-
+.content1,
+.fest {
+    background-color: red;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 7px;
+    border: 2px solid #334257;
+    box-shadow: 3px 3px 10px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Flag_of_Leipzig.svg/2000px-Flag_of_Leipzig.svg.png);
+    background-size: cover;
+    background-position: center;
+}
+.container .card .text,
+.fest-text {
+    color: #EEEEEE;
+    font-weight: 900;
+    padding: 10px;
+}
+.fest {
+    background-image: url(https://i.pinimg.com/originals/2b/e1/37/2be1379ccd95bdc9289492722676f2fa.png);
+}
+.card p {
+    color: #EEEEEE;
+}
+.card h3 {
+    color: #EEEEEE;
+}
+.footer footer .icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer footer .icons i {
+    font-size: 30px;
+    margin: 5px 5px 15px 5px;
+    cursor: pointer;
+    color: #334257;
+}
+.copyright {
+    text-align: center;
+}
 @media (min-width:481px) {
     .card,
     .card2 {
         display: inline-block;
-        width: calc(45% - 30px);
+        /* width: calc(45% - 30px); */
+        width: calc(44% - 30px);
     }
+    
     .continer {
         text-align: center;
     }
+    
     .fa-bars {
         right: 50px;
     }
 }
-
 @media (min-width: 769px) {
     .fa-bars {
         display: none;
     }
+    
     .card,
     .card2 {
-        width: calc(30% - 30px);
+        width: calc(30% - 40px);
     }
+    
     .continer {
         width: 720px;
         display: inline-block;
     }
+    
     .nav {
         justify-content: center;
         display: inline-block;
         width: 100%;
     }
+    
     ul {
         width: 100%;
         list-style: none;
@@ -118,6 +170,7 @@ main {
         background-color: #548CA8;
         padding: 20px;
     }
+    
     ul li {
         display: inline;
         position: relative;
@@ -125,10 +178,18 @@ main {
         color: #EEEEEE;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: bold;
-        padding: 10px 5px;
+        padding: 10px 10px;
         border-radius: 5px;
+        cursor: pointer;
     }
+    
     ul li:hover {
         background-color: #757b85;
     }
+    
+    ul li i {
+        font-size: 18px;
+    }
+    
+    .footer footer .icons {}
 }
